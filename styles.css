@@ -1,9 +1,69 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+:root {
+    --primary-color:#1D4ED8;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background: cornsilk;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     width: 50vw;
+    text-align: center;
+    margin: 4rem auto 7rem;
+    align-items: center;
+}
+
+#check-button {
+    background-color: var(--primary-color);
+    border: none;
+    font-size: large;
+    color: #fff;
+    outline: #fff;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    margin: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+#cash-given, #bill-amount {
+    padding: 0.5rem 1rem;
+    font-size: large;
+}
+
+#error-message {
+    display: block;
+    font-size: larger;
+    margin: 1rem 0 0;
+}
+
+.change-table {
+    width: 50%;
+    text-align: justify;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td {
+    width: 0%;
+    border: 2px solid var(--primary-color);
+    border-collapse: collapse;
+    padding: 0.4rem;
+}
+
+.heading {
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.description {
+    font-size: larger;
+    margin: 1rem;
+    font-weight: bold;
 }
